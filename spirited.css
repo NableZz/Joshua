@@ -1,0 +1,161 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #e3e7f1;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+header {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 40px;
+    background: linear-gradient(135deg, #f9c0c0 50%, #add7f6 50%);
+    border-radius: 20px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.movie-info {
+    max-width: 500px;
+}
+
+.movie-info h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    color: black;
+}
+
+.movie-info h1 span {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: gray;
+}
+
+.movie-info p {
+    margin: 20px 0;
+    line-height: 1.6;
+    color: #333;
+}
+
+.buttons {
+    margin-top: 20px;
+}
+
+.buttons .btn {
+    text-decoration: none;
+    color: white;
+    background-color: #ff6347;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-right: 10px;
+    transition: background-color 0.3s ease;
+}
+
+.buttons .btn:hover {
+    background-color: #e55347;
+}
+
+.movie-image img {
+    max-width: 400px;
+}
+
+footer ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    margin-top: 40px;
+}
+
+footer ul li {
+    margin: 0 20px;
+}
+
+footer ul li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 1rem;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+footer ul li a:hover {
+    color: #ff6347;
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        max-width: 90%;
+    }
+    main {
+        flex-direction: column;
+        padding: 20px;
+    }
+    .movie-info {
+        max-width: 100%;
+    }
+    .movie-image img {
+        max-width: 300px;
+    }
+    footer ul {
+        flex-direction: column;
+        align-items: center;
+    }
+    footer ul li {
+        margin: 10px 0;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    .container {
+        max-width: 95%;
+    }
+    main {
+        padding: 10px;
+    }
+    .movie-info h1 {
+        font-size: 2rem;
+    }
+    .movie-info p {
+        font-size: 1rem;
+    }
+    .buttons .btn {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+    footer ul li a {
+        font-size: 0.8rem;
+    }
+}
